@@ -2,7 +2,8 @@
  
 # Implement the following Vehicle Control system with the specifications listedbelow.
 1. Ask the user if he/she wants
-a. Turn on the vehicle engine
+
+   a. Turn on the vehicle engine
    b. Turn off the vehicle engine
    c. Quit the system
    
@@ -13,16 +14,25 @@ a. Turn on the vehicle engine
 4. Once a choice has been chosen, print on screen the system state.
 
 5. If chose to “Turn on the vehicle engine”, display “Sensors set menu”, menuthat simulates the vehicle sensors readings.
+
    a. Turn off the engine
+  
    b. Set the traffic light color.
+
    c. Set the room temperature (Temperature Sensor)
+
    d. Set the engine temperature (Engine Temperature Sensor)
+
    6. While the engine is ON, menu in requirement 5 must be always displayed and waits for an answer.
 
 7. Based on the answer of requirement 6.
+
    a. Based on traffic light data (Take it as input from console, we will assume that this is the sensor read value)
+
       i. If the traffic light is ‘G’ set vehicle speed to 100 km/hr
+
       ii. If the traffic light is ‘O’ set vehicle speed to 30 km/hr
+
       iii. If the traffic light is ‘R’ set vehicle speed to 0 km /h
 
    b. Based on room temperature data (Take it as input from console, we will assume that this is the sensor read value)
