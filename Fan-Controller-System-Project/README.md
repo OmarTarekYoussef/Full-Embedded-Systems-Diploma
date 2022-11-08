@@ -1,6 +1,6 @@
 # Full Embedded Systems Diploma
  
-##System Requirements
+#System Requirements
 
 #Implement the following Fan Controller system with the specifications listed below:
 
