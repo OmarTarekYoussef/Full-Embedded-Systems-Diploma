@@ -1,0 +1,62 @@
+11:22:32 **** Build of configuration Debug for project Ultrasonic_Sensor_Project ****
+make all 
+Building file: ../Ultrasonic_Sensor_Project.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"Ultrasonic_Sensor_Project.d" -MT"Ultrasonic_Sensor_Project.o" -c -o "Ultrasonic_Sensor_Project.o" "../Ultrasonic_Sensor_Project.c"
+Finished building: ../Ultrasonic_Sensor_Project.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'Icu_setCallBack':
+../icu.c:82: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:145: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"us.d" -MT"us.o" -c -o "us.o" "../us.c"
+In file included from ../us.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../us.c
+ 
+Building target: Ultrasonic_Sensor_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic_Sensor_Project.map -mmcu=atmega16 -o "Ultrasonic_Sensor_Project.elf"  ./Ultrasonic_Sensor_Project.o ./gpio.o ./icu.o ./lcd.o ./us.o   
+Finished building target: Ultrasonic_Sensor_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic_Sensor_Project.elf  >"Ultrasonic_Sensor_Project.lss"
+Finished building: Ultrasonic_Sensor_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic_Sensor_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8940 bytes (54.6% Full)
+(.text + .data + .bootloader)
+
+Data:         26 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+11:22:35 Build Finished. 0 errors, 4 warnings. (took 2s.637ms)
+
