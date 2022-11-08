@@ -1,6 +1,6 @@
 # Full Embedded Systems Diploma
  
-#Implement the following Stop Watch system with the specifications listed below:
+# Implement the following Stop Watch system with the specifications listed below:
 
 1. Use ATmega16 Microcontroller with frequency 1Mhz.
 
