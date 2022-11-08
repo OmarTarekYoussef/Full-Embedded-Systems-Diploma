@@ -92,6 +92,9 @@
    Make sure you left a space before %c to prevent scanf function from take new line or enter from the above printf functions as input.
 
 • For the bonus requirement, search for how to use preprocessor directive like below in C Language.
+
 #if (CONDITION)
+
 …
+
 #endif
